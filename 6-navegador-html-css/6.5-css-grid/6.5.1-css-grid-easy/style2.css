@@ -1,0 +1,19 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    text-align: center;
+}
+
+.item{
+    background-color: cadetblue;
+}
+
+/* Unidad de medida 1fr en CSS es abrebiatura de "fraccion" define el espacio disponible en la cudaricula 1fr 1fr 1fr; lo que indica que las tres columnas van a ocupar una fraccion de la cuadricula de nuestro conteiner*/
+
+.item2{
+    display: flex; /* Utilizar flexbox para centrar contenido dentro de mi item*/
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar de forma horizontal */
+    background-color: darkgoldenrod;
+}

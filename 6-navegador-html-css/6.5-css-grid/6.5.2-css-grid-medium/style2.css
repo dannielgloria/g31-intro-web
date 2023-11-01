@@ -1,0 +1,21 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho siempre*/
+    grid-gap: 10px;/* Espacio entre las celdas de la cuadricula */
+}
+
+.item{
+    background-color: lightcoral;
+    border: 1px solid #333;
+    padding: 20px;
+}
+
+.item:nth-child(2){
+    grid-column: span 2; /* El segundo elemento "nth-child(2)" ocupara el espacio de 2 columnas */
+    background-color: blue;
+    color: white;
+}
+
+.item:nth-child(4){
+    grid-row: span 2;
+}
